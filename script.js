@@ -22,26 +22,34 @@ let sort = ()=>{
       //   console.log(map[0])
       //   })
       //   console.log(filterd)
-        let join = map.join("")
-        console.log(join)
-        ulel.addEventListener("click" , (e)=>{
-         if(e.target){
+      const join = map.join("")
+      ulel.addEventListener("click" , (e)=>{
+        
+        if(e.target){
           e.target.classList.add("checked")
           setTimeout(()=>{
             e.target.style.display = "none"
           } , 1000)
           setTimeout(() => {
-           array.pop(e.target)
+            array.pop(e.target)
           },1000);
-         }
-
+        }
+        
       })
-        ulel.innerHTML = join
+      ulel.innerHTML = join
+      // let boss = ulel.querySelectorAll('li:not(className):not([id=null])')
+      // console.log(boss)
+      // let spat = document.createElement("span")
+      // spat.innerHTML = "vvv"
+      // spat.style.setProperty("background-red" ,"red")
+      // spat.style.setProperty("color" ,"red")
+      // boss.forEach((each)=>{
+      //   each.appendChild(spat)
+      // })
 }
 
 
-
-
+// REMEBER TO DO USE BEFORE AND LEaen HOW TO GET
 
 
 // let sort = () => {
